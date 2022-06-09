@@ -24,7 +24,7 @@ const Result = () => {
       <Contents>
         <Title>결과보기</Title>
         <LogoImage>
-          <img src={resultData.image} className="rounded-circle" width={350} height={350}></img>
+          <img alt='결과이미지' src={resultData.image} className="rounded-circle" width={350} height={350}></img>
         </LogoImage>
         <Desc>예비 집사님과 찰떡궁합인 고양이는 {resultData.name}입니다.</Desc>
         <Button onClick={() => navigate("/")}>
