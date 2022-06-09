@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PangImage from '../assets/PangImage.jpg';
+import PangImage from '../assets/cats/PangImage.jpg';
 import  Button  from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
 // 개인 프로젝트이기 때문에 css-in-js 이용
@@ -15,7 +15,6 @@ const Home = () => {
   }
 
   return (
-  <>
     <Wrapper>
       <Header>예비집사 판별기</Header>
       <Contents>
@@ -27,7 +26,6 @@ const Home = () => {
         <Button onClick={handleClickButton}>테스트 시작하기</Button>
       </Contents>
     </Wrapper>
-  </>
   )
 }
 
