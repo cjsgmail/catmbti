@@ -73,8 +73,8 @@ const Question = () => {
         <div>{QuestionData[questionNo].titlebr}</div>
       </Title>
       <ButtonGroup className='buttonGroup'>
-        <button onClick={()=>handleClickButton(1, QuestionData[questionNo].type)} style={{width: "400px", minHeight: "200px", fontSize: "15px"}}>{QuestionData[questionNo].answera}</button>
-        <button onClick={()=>handleClickButton(0, QuestionData[questionNo].type)} style={{width: "400px", minHeight: "200px", fontSize: "15px", marginTop: "20px"}}>{QuestionData[questionNo].answerb}</button>
+        <button onClick={()=>handleClickButton(1, QuestionData[questionNo].type)} style={{width: "70%", minHeight: "200px", fontSize: "15px"}}>{QuestionData[questionNo].answera}</button>
+        <button onClick={()=>handleClickButton(0, QuestionData[questionNo].type)} style={{width: "70%", minHeight: "200px", fontSize: "15px", marginTop: "20px"}}>{QuestionData[questionNo].answerb}</button>
       </ButtonGroup>
     </Wrapper>
   )
