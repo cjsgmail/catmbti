@@ -1,0 +1,32 @@
+.result__wrapper {
+  background-color: #927a67;
+}
+
+.result__header > div{
+  font-size: 30px;
+  color: #8f7057;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #ecd0bb;
+}
+
+.result__desc {
+  background-color: #8e9e90;
+  color: white;
+  width: 370px;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px; 
+  border-radius: 10px;
+}
+
+/* .home__header > div {
+  font-size: 30px;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #927a67;
+} */

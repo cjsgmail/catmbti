@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ProgressBar, Button } from 'react-bootstrap'
+import { ProgressBar } from 'react-bootstrap'
 import { createSearchParams, useNavigate } from 'react-router-dom';
 import { QuestionData } from '../assets/data/questiondata';
+import './Question.css'
 
 const Question = () => {
   const [questionNo, setQuestionNo] = React.useState(0);
@@ -65,12 +66,15 @@ const Question = () => {
 
 
   return (
-    <Wrapper>
-      <ProgressBar striped variant="danger" now={(questionNo / QuestionData.length)*100} style={{ marginTop: '20px' }}/>
-      <Title>{QuestionData[questionNo].title}</Title>
-      <ButtonGroup>
-        <Button onClick={()=>handleClickButton(1, QuestionData[questionNo].type)} style={{width: "40%", minHeight: "200px", fontSize: "15px"}}>{QuestionData[questionNo].answera}</Button>
-        <Button onClick={()=>handleClickButton(0, QuestionData[questionNo].type)} style={{width: "40%", minHeight: "200px", fontSize: "15px", marginLeft: "20px"}}>{QuestionData[questionNo].answerb}</Button>
+    <Wrapper className='question__wrapper'>
+      <ProgressBar striped variant="danger" now={(questionNo / QuestionData.length)*100} />
+      <Title className='question__title'>
+        <div>{QuestionData[questionNo].title}</div>
+        <div>{QuestionData[questionNo].titlebr}</div>
+      </Title>
+      <ButtonGroup className='buttonGroup'>
+        <button onClick={()=>handleClickButton(1, QuestionData[questionNo].type)} style={{width: "400px", minHeight: "200px", fontSize: "15px"}}>{QuestionData[questionNo].answera}</button>
+        <button onClick={()=>handleClickButton(0, QuestionData[questionNo].type)} style={{width: "400px", minHeight: "200px", fontSize: "15px", marginTop: "20px"}}>{QuestionData[questionNo].answerb}</button>
       </ButtonGroup>
     </Wrapper>
   )
@@ -84,12 +88,12 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.div`
-  font-size: 30pt;
-  text-align: center;
+  height: 10vh;
 `
 
 const ButtonGroup = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `

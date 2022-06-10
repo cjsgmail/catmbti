@@ -1,0 +1,30 @@
+.home__wrapper {
+  background-color: #927a67;
+}
+
+.home__header {
+  background-color: #8e9e90;
+}
+
+.home__header > div {
+  font-size: 30px;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #927a67;
+}
+
+.home__title > div {
+  color: white;
+  font-size: 20px;
+}
+
+.home__desc > div {
+  color: white;
+  font-size: 20px;
+}
+
+.start__button {
+  margin-top: 10px;
+}
