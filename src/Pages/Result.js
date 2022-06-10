@@ -27,7 +27,6 @@ const Result = () => {
           <img alt='결과이미지' src={resultData.image} className="rounded-circle" width={250} height={250}></img>
         </LogoImage>
         <Desc className='result__desc'>
-          <div>예비 집사님과 찰떡궁합인 고양이는 {resultData.name}입니다.</div>
           <div>{resultData.desc}</div>
         </Desc>
        <ButtonGroup> 
