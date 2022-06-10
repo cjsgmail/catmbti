@@ -30,9 +30,11 @@ const Result = () => {
           <div>예비 집사님과 찰떡궁합인 고양이는 {resultData.name}입니다.</div>
           <div>{resultData.desc}</div>
         </Desc>
-        <Button onClick={() => navigate("/")}>
-          테스트 다시하기
-        </Button>
+       <ButtonGroup> 
+          <Button onClick={() => navigate("/")}>
+            테스트 다시하기
+          </Button>
+        </ButtonGroup> 
       </Contents>
     </Wrapper>
     )
@@ -60,6 +62,10 @@ const LogoImage = styled.div`
 
 const Desc = styled.div`
 
+`
+const ButtonGroup = styled.div`
+  display: flex;
+  flex-direction: row;
 `
 
 export default Result;

@@ -18,7 +18,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-button:hover {
+button:active {
   background-color: #8e9e90;
   transition: 1s;
   opacity: 0.3;
